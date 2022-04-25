@@ -44,7 +44,7 @@ async function analyzeCommits(pluginConfig, context) {
       })
       .map(({message, ...commitProps}) => ({rawMsg: message, message, ...commitProps, ...parser(message, config)}))
       // Filter commits based on releaseScopes
-      .filter(({scope}) => (releaseScopes.length > 0 ? releaseScopes.includes(scope) : true))
+      .filter(({scope}) => !releaseScopes.length || releaseScopes.includes(scope))
   ).every(({rawMsg, ...commit}) => {
     logger.log(`Analyzing commit: %s`, rawMsg);
     let commitReleaseType;
