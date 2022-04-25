@@ -14,7 +14,9 @@
   "contributors": [
     "Stephan Bönnemann <stephan@boennemann.me> (http://boennemann.me)",
     "Gregor Martynus (https://twitter.com/gr2m)",
-    "Pierre Vanduynslager (https://twitter.com/@pvdlg_)"
+    "Pierre Vanduynslager (https://twitter.com/@pvdlg_)",
+    "Kay Yakimenko <commit-analyzer-scoped@juke.fr>",
+    "Vincent Le Badezet <vincent@lajavaness.com>"
   ],
   "dependencies": {
     "conventional-changelog-angular": "^5.0.0",
