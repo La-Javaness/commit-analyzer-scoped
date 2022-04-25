@@ -2,7 +2,7 @@
   "name": "commit-analyzer-scoped",
   "description": "semantic-release plugin to analyze commits with conventional-changelog",
   "version": "0.0.0",
-  "author": "Kay Yakimenko <commit-analyzer-scoped@juke.fr>",
+  "author": "La Javaness <dev@lajavaness.com>",
   "ava": {
     "files": [
       "test/**/*.test.js"
