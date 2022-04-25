@@ -1,19 +1,20 @@
 {
-  "name": "@semantic-release/commit-analyzer-scoped",
+  "name": "commit-analyzer-scoped",
   "description": "semantic-release plugin to analyze commits with conventional-changelog",
-  "version": "0.0.0-development",
-  "author": "Pierre Vanduynslager (https://twitter.com/@pvdlg_)",
+  "version": "0.0.0",
+  "author": "Kay Yakimenko <commit-analyzer-scoped@juke.fr>",
   "ava": {
     "files": [
       "test/**/*.test.js"
     ]
   },
   "bugs": {
-    "url": "https://github.com/semantic-release/commit-analyzer/issues"
+    "url": "https://github.com/La-Javaness/commit-analyzer-scoped/issues"
   },
   "contributors": [
     "Stephan Bönnemann <stephan@boennemann.me> (http://boennemann.me)",
-    "Gregor Martynus (https://twitter.com/gr2m)"
+    "Gregor Martynus (https://twitter.com/gr2m)",
+    "Pierre Vanduynslager (https://twitter.com/@pvdlg_)"
   ],
   "dependencies": {
     "conventional-changelog-angular": "^5.0.0",
@@ -44,7 +45,7 @@
     "lib",
     "index.js"
   ],
-  "homepage": "https://github.com/semantic-release/commit-analyzer#readme",
+  "homepage": "https://github.com/La-Javaness/commit-analyzer-scoped#readme",
   "keywords": [
     "changelog",
     "commit-analyzer",
@@ -81,7 +82,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/semantic-release/commit-analyzer.git"
+    "url": "https://github.com/La-Javaness/commit-analyzer-scoped.git"
   },
   "scripts": {
     "lint": "xo",
