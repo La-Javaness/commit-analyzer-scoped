@@ -2,9 +2,9 @@
 
 [**semantic-release**](https://github.com/semantic-release/semantic-release) plugin to analyze commits with [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog)
 
-[![Build Status](https://github.com/semantic-release/commit-analyzer/workflows/Test/badge.svg)](https://github.com/semantic-release/commit-analyzer/actions?query=workflow%3ATest+branch%3Amaster) [![npm latest version](https://img.shields.io/npm/v/@semantic-release/commit-analyzer/latest.svg)](https://www.npmjs.com/package/@semantic-release/commit-analyzer)
-[![npm next version](https://img.shields.io/npm/v/@semantic-release/commit-analyzer/next.svg)](https://www.npmjs.com/package/@semantic-release/commit-analyzer)
-[![npm beta version](https://img.shields.io/npm/v/@semantic-release/commit-analyzer/beta.svg)](https://www.npmjs.com/package/@semantic-release/commit-analyzer)
+[![Build Status](https://github.com/semantic-release/commit-analyzer/workflows/Test/badge.svg)](https://github.com/semantic-release/commit-analyzer/actions?query=workflow%3ATest+branch%3Amaster) [![npm latest version](https://img.shields.io/npm/v/commit-analyzer-scoped/latest.svg)](https://www.npmjs.com/package/commit-analyzer-scoped)
+[![npm next version](https://img.shields.io/npm/v/commit-analyzer-scoped/next.svg)](https://www.npmjs.com/package/commit-analyzer-scoped)
+[![npm beta version](https://img.shields.io/npm/v/commit-analyzer-scoped/beta.svg)](https://www.npmjs.com/package/commit-analyzer-scoped)
 
 | Step             | Description                                                                                                                                         |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -13,7 +13,7 @@
 ## Install
 
 ```bash
-$ npm install @semantic-release/commit-analyzer -D
+$ npm install commit-analyzer-scoped -D
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ The plugin can be configured in the [**semantic-release** configuration file](ht
 ```json
 {
   "plugins": [
-    ["@semantic-release/commit-analyzer", {
+    ["commit-analyzer-scoped", {
       "preset": "angular",
       "releaseRules": [
         {"type": "docs", "scope":"README", "release": "patch"},
@@ -61,7 +61,7 @@ With this example:
 | `config`       | npm package name of a custom [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog) preset.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | -                                                                                                                                 |
 | `parserOpts`   | Additional [conventional-commits-parser](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-commits-parser#conventionalcommitsparseroptions) options that will extends the ones loaded by `preset` or `config`. This is convenient to use a [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog) preset with some customizations without having to create a new module.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | -                                                                                                                                 |
 | `releaseRules` | An external module, a path to a module or an `Array` of rules. See [`releaseRules`](#releaserules).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | See [`releaseRules`](#releaserules)                                                                                               |
-| `releaseScopes` | An external module, a path to a module or an `Array` of rules. See [`releaseScopes`](#releasescopes).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | See [`releaseScopes`](#releasescopes)                                                                                               |
+| `releaseScopes` | An external module, a path to a module or an `Array` of scopes. See [`releaseScopes`](#releasescopes).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | See [`releaseScopes`](#releasescopes)                                                                                               |
 | `presetConfig` | Additional configuration passed to the [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog) preset. Used for example with [conventional-changelog-conventionalcommits](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.0.0/README.md).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | -                                                                                                                                 |
 
 **Notes**: in order to use a `preset` it must be installed (for example to use the [eslint preset](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-eslint) you must install it with `npm install conventional-changelog-eslint -D`)
@@ -82,7 +82,7 @@ This is an `Array` of rule objects. A rule object has a `release` property and 1
 ```json
 {
   "plugins": [
-    ["@semantic-release/commit-analyzer", {
+    ["commit-analyzer-scoped", {
       "preset": "angular",
       "releaseRules": [
         {"type": "docs", "scope": "README", "release": "patch"},
@@ -149,7 +149,7 @@ For example with `eslint` preset:
 ```json
 {
   "plugins": [
-    ["@semantic-release/commit-analyzer", {
+    ["commit-analyzer-scoped", {
       "preset": "eslint",
       "releaseRules": [
         {"tag": "Docs", "message":"*README*", "release": "patch"},
@@ -174,7 +174,7 @@ With this configuration:
 ```json
 {
   "plugins": [
-    ["@semantic-release/commit-analyzer", {
+    ["commit-analyzer-scoped", {
       "preset": "angular",
       "releaseRules": "./config/release-rules.js"
     }],
