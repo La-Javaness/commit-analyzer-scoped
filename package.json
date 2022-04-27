@@ -108,6 +108,7 @@
   "release": {
     "branches": [
       "main"
-    ]
+    ],
+    "tagFormat": "v${version}-scoped"
   }
 }
