@@ -2,9 +2,8 @@
 
 [**semantic-release**](https://github.com/semantic-release/semantic-release) plugin to analyze commits with [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog)
 
-[![Build Status](https://github.com/semantic-release/commit-analyzer/workflows/Test/badge.svg)](https://github.com/semantic-release/commit-analyzer/actions?query=workflow%3ATest+branch%3Amaster) [![npm latest version](https://img.shields.io/npm/v/commit-analyzer-scoped/latest.svg)](https://www.npmjs.com/package/commit-analyzer-scoped)
-[![npm next version](https://img.shields.io/npm/v/commit-analyzer-scoped/next.svg)](https://www.npmjs.com/package/commit-analyzer-scoped)
-[![npm beta version](https://img.shields.io/npm/v/commit-analyzer-scoped/beta.svg)](https://www.npmjs.com/package/commit-analyzer-scoped)
+[![Build Status](https://github.com/La-Javaness/commit-analyzer-scoped/workflows/Test/badge.svg)](https://github.com/La-Javaness/commit-analyzer-scoped/actions?query=workflow%3ATest+branch%3Amain)
+[![npm latest version](https://img.shields.io/npm/v/commit-analyzer-scoped)](https://www.npmjs.com/package/commit-analyzer-scoped)
 
 | Step             | Description                                                                                                                                         |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
