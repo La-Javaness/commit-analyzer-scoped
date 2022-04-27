@@ -104,5 +104,10 @@
     "extends": [
       "github>semantic-release/.github"
     ]
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
   }
 }
