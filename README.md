@@ -189,3 +189,33 @@ module.exports = [
   {type: 'refactor', release: 'patch'},
 ];
 ```
+#### releaseScopes
+
+Scopes are passed inside parenthesis `()` in the git commit message header like `feat(my-example-scope): ...`
+
+Release scopes are used to filter which commits since the last release should be analyzed for a release.
+
+They are are an array of strings, each string is a scope that should be included.
+
+##### Rules definition
+
+This is an `Array` of scope strings. A scope string refers to the git commit message header mentioned earlier.
+```json
+{
+  "plugins": [
+    ["commit-analyzer-scoped", {
+      "preset": "angular",
+      "releaseRules": [...],
+      "releaseScopes": [
+        "my-scope"
+      ],
+    }],
+    "@semantic-release/release-notes-generator"
+  ]
+}
+```
+
+##### Default rules matching
+
+By default the value is `[]` which will match any scope.
+
