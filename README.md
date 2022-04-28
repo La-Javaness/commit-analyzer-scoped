@@ -195,7 +195,7 @@ Scopes are passed inside parenthesis `()` in the git commit message header like 
 
 Release scopes are used to filter which commits since the last release should be analyzed for a release.
 
-They are are an array of strings, each string is a scope that should be included.
+They are an array of strings, each string is a scope that should be included.
 
 ##### Rules definition
 
