@@ -217,5 +217,5 @@ This is an `Array` of scope strings. A scope string refers to the git commit mes
 
 ##### Default rules matching
 
-By default the value is `[]` which will match any scope.
+By default the value is `[]` which will match any scopes.
 
